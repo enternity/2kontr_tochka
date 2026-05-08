@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="2kontr_tochka/2kontr_tochka.vcxproj" Id="e73f9f0c-d937-4036-af5d-1840ffc6ca6b" />
+</Solution>
