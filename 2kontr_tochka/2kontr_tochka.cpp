@@ -1,11 +1,15 @@
 ﻿// 15 variant
 #include <iostream>
 #include <string>
+#include <windows.h>
 
 using namespace std;
 
 int main()
 {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     string s;
 
     cout << "Введите строку:\n";
@@ -20,9 +24,10 @@ int main()
     int count = 0;
 
     string temp = "";
+
     for (int i = 0; i <= s.length(); i++)
     {
-        if (s[i] != ' ' && i != s.length())
+        if (i != s.length() && s[i] != ' ')
         {
             temp += s[i];
         }
@@ -39,7 +44,6 @@ int main()
 
     cout << "\nРезультат:\n";
 
-    // Вывод слов кроме диапазона M и N
     for (int i = 0; i < count; i++)
     {
         if (i + 1 < m || i + 1 > n)
